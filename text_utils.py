@@ -8,4 +8,4 @@ def count_words(text):
 
 def count_sentences(text):
     # splits the text into a list by periods and returns how many list items there are
-    return len(text.split("."))
+    return text.count(".") + text.count("!") + text.count("?")
