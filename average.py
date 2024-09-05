@@ -15,7 +15,7 @@ import text_utils
 
 def average_words():
     # opens the file
-    text = file.open("sample.txt", "r")
+    text = open("sample.txt", "r")
     # turns the file into a list
     lines = text.readlines()
     # closes the file
@@ -26,7 +26,7 @@ def average_words():
     num_lns = len(lines)
     # adds the amount of words in each index of the lines list to avg
     for i in lines:
-        avg += text_utils.words(i)
+        avg += text_utils.count_words(i)
     # returns the average words per line
     return f'Average words per line: {avg/num_lns}'
 print(average_words())
