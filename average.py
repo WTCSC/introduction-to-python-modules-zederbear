@@ -28,5 +28,5 @@ def average_words():
     for i in lines:
         avg += text_utils.count_words(i)
     # returns the average words per line
-    return f'Average words per line: {avg/num_lns}'
+    return f'Average words per line: {avg//num_lns}'
 print(average_words())
