@@ -10,3 +10,14 @@ format:
 
 "Average words per line: [average]"
 """
+
+import text_utils
+
+def average_words():
+    text = file.open("sample.txt", "r")
+    lines = text.readlines()
+    avg = 0
+    num_lns = len(lines)
+    for i in lines:
+        avg += text_utils.words(i)
+    return f'Average words per line: {avg/num_lns}'
