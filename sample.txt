@@ -1,0 +1,4 @@
+This is a line with 7 words
+This is a line with 6
+I have 3
+And I make 4
