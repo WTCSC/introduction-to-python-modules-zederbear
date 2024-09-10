@@ -1,14 +1,11 @@
 def count_chars(text):
-    """
-    Count the number of characters in a text
-    """
+    # returns the number of characters
+    return len(text)
 
 def count_words(text):
-    """
-    Count the number of words in a text
-    """
+    # returns the amount of words by splitting by each space and counting the number of list items
+    return len(text.split())
 
 def count_sentences(text):
-    """
-    Count the number of sentences in a text
-    """
+    # splits the text into a list by periods and returns how many list items there are
+    return text.count(".") + text.count("!") + text.count("?")

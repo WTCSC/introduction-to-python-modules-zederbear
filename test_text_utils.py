@@ -3,12 +3,12 @@ from text_utils import count_chars, count_words, count_sentences
 def test_count_chars():
     assert count_chars("Hello, World!") == 13
     assert count_chars("Hello, World! How are you?") == 26
-    assert count_chars("Hello, World! How are you? I'm fine.") == 35
+    assert count_chars("Hello, World! How are you? I'm fine.") == 36
 
 def test_count_words():
     assert count_words("Hello, World!") == 2
-    assert count_words("Hello, World! How are you?") == 6
-    assert count_words("Hello, World! How are you? I'm fine.") == 8
+    assert count_words("Hello, World! How are you?") == 5
+    assert count_words("Hello, World! How are you? I'm fine.") == 7
 
 def test_count_sentences():
     assert count_sentences("Hello, World!") == 1
